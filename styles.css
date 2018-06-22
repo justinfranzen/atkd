@@ -1,0 +1,313 @@
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+#header {
+    background: rgba(4, 104, 147, 1);
+    width: 100%;
+    display: block;
+    position: fixed;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+}
+
+#footer {
+    height: 100px;
+    background: rgba(4, 104, 147, 1);
+}
+
+#logo {
+    width: 100px;
+    max-width: 100%;
+    margin-left: 3%;
+    padding: 10px 0 5px 0;
+    margin-bottom: 5px;
+}
+
+#nav {
+    display: inline-flex;
+    list-style-type: none;
+    float: right;
+    margin-top: 50px;
+    margin-right: 3%;
+}
+
+#nav li {
+    padding: 0 5px;
+}
+
+#nav li a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+#nav li a:hover {
+    color: rgb(233,41,41);
+    transition-duration: .3s;
+}
+
+#nav li a:not(:hover) {
+    transition-duration: .3s;
+}
+
+#bg-img {
+    background-image: url('../images/homepage-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#school-name {
+    margin-top: 300px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    font-style: italic;
+}
+
+#slogan {
+    font-size: 45px;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 15px !important;
+}
+
+#bg-section {
+    background: rgba(4, 104, 147, .3);
+    padding: 50px 0;
+}
+
+.content {
+    width: 93%;
+    margin: 0 auto;
+    background: rgba(233,41,41, .5);
+    padding: 2% 4% 4%;
+}
+
+.content2 {
+    width: 93%;
+    margin: 125px auto 10px;
+    background: rgba(233,41,41, .5);
+    padding: 2% 4% 4%;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 50px !important;
+    letter-spacing: 2px;
+    margin-bottom: 50px !important;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+    color: white !important;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 1px;
+    margin-bottom: 20px !important;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 1px;
+}
+
+.content.two {
+    margin-top: 50px;
+}
+
+blockquote {
+    font-size: 16px !important;
+    border-left: none !important;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.announcement {
+    font-size: 16px;
+}
+
+#form {
+    max-width: 700px;
+    margin: 40px auto 25px;
+    padding: 3%;
+    border: 2px solid lightslategray;
+    background: #bbc3cc;
+}
+
+label {
+    font-weight: initial !important;
+    font-size: 16px !important;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px !important;
+    border: 1.5px solid rgb(4, 104, 147);
+}
+
+::placeholder {
+    font-weight: initial !important;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    border: 1.5px solid rgb(4, 104, 147);
+    padding-left: 8px;
+    padding-top: 5px;
+}
+
+#submit {
+    width: 125px;
+    height: 50px;
+    background: rgb(224, 224, 224);
+    border: 1.5px solid rgb(4, 104, 147);
+    color: black;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 50px auto 10px;
+    display: block;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+#submit:hover {
+    background: rgb(4, 104, 147);
+    color: white;
+    transition-duration: .3s;
+}
+
+#submit:not(:hover) {
+    transition-duration: .3s;
+}
+
+.submenu-content, .submenu-content2, .submenu-content3, .submenu-content4 {
+    display: none;
+    position: absolute;
+    width: auto;
+    margin-left: 5px;
+    background: rgb(136, 175, 191);
+    margin-top: 10px;
+    height: auto; 
+    text-align: left;
+    z-index: 1;
+}
+
+.submenu-content li, .submenu-content2 li, .submenu-content3 li, .submenu-content4 li  {
+    padding: 0 !important;
+}
+
+.submenu-content li a, .submenu-content2 li a, .submenu-content3 li a, .submenu-content4 li a {
+    display: inherit;
+    padding: 0;
+}
+
+.submenu-content li a:hover, .submenu-content2 li a:hover, .submenu-content3 li a:hover, .submenu-content4 li a:hover{
+    background: rgb(233,41,41);
+    color: white !important;
+}
+
+#about-dropdown:hover .submenu-content, #programs-dropdown:hover .submenu-content2, #schedule-dropdown:hover .submenu-content3, #knowledge-dropdown:hover .submenu-content4 {
+    display: block;
+}
+
+.instructor {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.instructor-bio {
+    margin-bottom: 50px;
+}
+
+.testing {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.last {
+    margin-bottom: 0 !important
+}
+
+ul, ol {
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#birthday {
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+}
+
+#phonenumber {
+    color: white;
+}
+
+#phonenumber:hover {
+    color: lightblue;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+#phonenumber:not(:hover) {
+    transition-duration: .3s;
+}
+
+.school {
+    text-align: center;
+    font-size: 36px !important;
+    text-transform: uppercase;
+}
+
+.schedule {
+    margin-bottom: 50px;
+}
+
+.forms-sparring {
+    width: 350px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.space {
+    margin-top: 75px;
+}
+
+#important {
+    text-align: center;
+}
+
+.letter {
+    list-style-type: upper-alpha;
+}
+
+
+
+
+
