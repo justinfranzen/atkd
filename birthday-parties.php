@@ -4,11 +4,11 @@ include 'includes/header.php';
 
 <body>
     
-    <div id="bg-section">
-        
-        <div class="content2">
+    <h1 class="main-h1">BIRTHDAY PARTIES</h1>
     
-            <h1>BIRTHDAY PARTIES</h1>
+    <div id="birthday-title-img"></div> 
+        
+        <div class="secondary-content">
 
             <p>60 minutues of action packed activities in the gym with a fun, energetic black belt instructor.  We also provide 30 minutes for cake and other treats and gifts.  Kids can also dress up as their favorite character.</p>
             
@@ -45,7 +45,7 @@ include 'includes/header.php';
                 
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     
-                    <img src="images/birthday.jpg" alt="Birthday Party" id="birthday" />
+                    <img src="images/birthday-sign.jpg" alt="Birthday Party" id="birthday" />
                     
                 </div>
                 
@@ -59,9 +59,7 @@ include 'includes/header.php';
             
             <p>Once you pay for this offer, we will provide you with a voucher that can be redeemed up to one year from purchase date. A party can be booked as early as four weeks in advance.</p>
     
-            <p><strong>Some Restrictions may apply, see location for details <a href="tel:262-483-5955" id="phonenumber">262-483-5955</a> ask for Ron</strong></p>
-            
-        </div>
+            <p><strong>Some Restrictions may apply, contact location for details, <a href="tel:262-483-5955" class="link">262-483-5955</a>, ask for Ron</strong></p>
 
     </div>
 

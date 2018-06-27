@@ -2,13 +2,28 @@
 include 'includes/header.php';
 ?>
 
+<style>
+    .parallax2 {
+        background-image: url("images/student-new.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 550px;
+        padding-top: 40px;
+        text-align: center;
+        color: white;
+    }
+    
+</style>
+
 <body>
     
-    <div id="bg-section">
-        
-        <div class="content2">
+    <h1 class="main-h1">RULES &amp; REQUIREMENTS</h1>
     
-            <h1>RULES &amp; REQUIREMENTS</h1>
+    <div id="rules-title-img"></div> 
+    
+        <div class="secondary-content">
             
                 <h2>Rules of the Academy</h2>
             
@@ -28,23 +43,33 @@ include 'includes/header.php';
                 <li>No adults over the age of 14 in the locker room with children 13 and under.</li>
             </ul>
             
-            <h2>Student Creed</h2>
+        </div>
             
-            <p>I will develop myself in a positive manner and avoid anything that would reduce my mental growth or my physical health.</p>
-
-            <p>I will develop self-discipline in order to bring out the best in myself and others.</p>
-
-            <p>I will use what I learn in class constructively and defensively, to help myself and my fellow man and never to be abusive or offensive.</p>
+            <div class="parallax2">
             
-            <h2>Student Oath</h2>
-            
-            <p>I shall train my body and my mind based upon the Spirit of Tae Kwon Do.</p>
+                <h2>STUDENT CREED</h2>
 
-            <p>I shall observe the Rules and Regulations of the School.</p>
+                <p>I will develop myself in a positive manner and avoid anything that would reduce my mental growth or my physical health.</p>
 
-            <p>I shall obey and respect the Instructor.</p>
+                <p>I will develop self-discipline in order to bring out the best in myself and others.</p>
 
-            <p>I shall exhibit a Spirit of Unity with my fellow students.</p>
+                <p>I will use what I learn in class constructively and defensively, to help myself and my fellow man and never to be abusive or offensive.</p>
+
+                <br>
+
+                <h2>STUDENT OATH</h2>
+
+                <p>I shall train my body and my mind based upon the Spirit of Tae Kwon Do.</p>
+
+                <p>I shall observe the Rules and Regulations of the School.</p>
+
+                <p>I shall obey and respect the Instructor.</p>
+
+                <p>I shall exhibit a Spirit of Unity with my fellow students.</p>
+                
+            </div>
+    
+    <div class="secondary-content">
             
             <h2>The Eight Manners of Solemnity</h2>
             
@@ -59,7 +84,6 @@ include 'includes/header.php';
                 <li>Conduct Rightly</li>
             </ol>
 
-        </div>
 
     </div>
 

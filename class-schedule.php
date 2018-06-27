@@ -4,11 +4,11 @@ include 'includes/header.php';
 
 <body>
     
-    <div id="bg-section">
+    <h1 class="main-h1">CLASS SCHEDULE</h1>
+
+     <div id="schedule-title-img"></div> 
         
-        <div class="content2">
-            
-            <h1>CLASS SCHEDULE</h1>
+        <div class="secondary-content">
             
             <div class="row">
                 
@@ -42,7 +42,7 @@ include 'includes/header.php';
             
             <div class="row schedule">
             
-                <div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12">
                 
                     <h3 class="day">Thursday</h3>
                     <p>4:30 pm - Low belt form</p>
@@ -52,7 +52,7 @@ include 'includes/header.php';
                     
                 </div>
                 
-                <div class="col-lg-4 col-lg-offset-2 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-6 col-xs-12">
                 
                     <h3 class="day">Friday</h3>
                     <p>4:00 - 4:45 pm - Beginner and intro class</p>
@@ -66,7 +66,7 @@ include 'includes/header.php';
                  
                  <h2 class="school">Brookfield Studio</h2>
                 
-                <div class="col-lg-3 col-lg-offset-1 col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                     
                     <h3 class="day">Monday</h3>
                     <p>4:30 - 5:10 pm - li ninjas</p>
@@ -78,7 +78,7 @@ include 'includes/header.php';
                 <div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-4 col-xs-12">
 
                     <h3 class="day">Wednesday</h3>
-                    <p>4:30 - 5:1pm - Low belt techniques</p>
+                    <p>4:30 - 5:10 pm - Low belt techniques</p>
                     <p>5:15 - 6:30 pm - High belt techniques/sparring</p>
                     
                 </div>

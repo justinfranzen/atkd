@@ -4,11 +4,11 @@ include 'includes/header.php';
 
 <body>
     
-    <div id="bg-section">
-        
-        <div class="content2">
+<h1 class="main-h1">HAPKIDO</h1>
     
-            <h1>HAPKIDO</h1>
+   <div id="hapkido-title-img"></div> 
+        
+        <div class="secondary-content">
 
             <h2>ATC Self Defense</h2>
                 

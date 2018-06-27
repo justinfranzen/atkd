@@ -3,16 +3,16 @@ include 'includes/header.php';
 ?>
 
 <body>
+
+    <h1 class="main-h1">BELT TESTING</h1>
     
-    <div id="bg-section">
+    <div id="testing-title-img"></div>
         
-        <div class="content2">
-            
-            <h1>BELT TESTING</h1>
+    <div class="secondary-content">
             
             <div class="row testing">
                 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
 
                     <h2 class="school">Hartford</h2>
                     <p>Black Belt Testing</p>
@@ -22,7 +22,7 @@ include 'includes/header.php';
                     
                 </div>
                 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
 
                     <h2 class="school">Hartford</h2>
                     <p>Colored Belt Testing</p>
@@ -33,11 +33,7 @@ include 'includes/header.php';
                     
                 </div>
                 
-            </div>
-            
-             <div class="row testing">
-                
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
 
                     <h2 class="school">Fredonia</h2>
                     <p>Colored Belt Testing</p>
@@ -46,7 +42,11 @@ include 'includes/header.php';
                     
                 </div>
                 
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            </div>
+        
+            <div class="row testing last">
+                
+                <div class="col-lg-6 col-md-6 col-sm-12">
 
                     <h2 class="school">Kettle Moraine YMCA</h2>
                     <p>Colored Belt Testing</p>
@@ -55,12 +55,8 @@ include 'includes/header.php';
                     <p>High Belt - 6:30 PM</p>
                     
                 </div>
-                 
-            </div>
-                 
-            <div class="row testing last">
                 
-                <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="col-lg-6 col-md-6 col-sm-12">
 
                     <h2 class="school">Brookfield</h2>
                     <p>Colored Belt Testing</p>
@@ -70,18 +66,14 @@ include 'includes/header.php';
                 </div>
                 
             </div>
+        
+    </div>
+    
+    <h1 class="secondary-title">TESTING REQUIREMENTS</h1>
             
-        </div>
-        
-        <div class="content two">
-        
-            <h1>TESTING REQUIREMENTS</h1>
-            
-            <h3 id="important">This page is only a guide for the minimum requirements - ask your instructor for your belt level requirements for testing.</h3>
-        
-            <br>
-        
-            <h2>Low Belt Requirements</h2>
+            <h2 id="important">This is only a guide for the minimum requirements.  Ask your instructor for your belt level requirements for testing.</h2>
+    
+    <div class="content two">
         
             <h2>White Belt (10TH Gup) testing for High White Belt (9TH Gup)</h2>
             
@@ -146,6 +138,10 @@ include 'includes/header.php';
                 </ol>
             
             <br>
+    
+    </div>
+        
+    <div class="secondary-inner-content">
             
             <h2>High White Belt (9TH Gup) testing for Yellow Belt (8TH Gup)</h2>
             
@@ -203,6 +199,10 @@ include 'includes/header.php';
                 </ol>
             
             <br>
+        
+        </div>
+    
+    <div class="content two">
             
             <h2>Yellow belt (8TH Gup) testing for Orange Belt (7TH Gup)</h2>
             
@@ -258,6 +258,10 @@ include 'includes/header.php';
                 </ol>
             
             <br>
+        
+    </div>
+    
+    <div class="secondary-inner-content">
             
             <h2>Orange Belt (7TH Gup) testing for Green Belt (6TH Gup)</h2>
             
@@ -305,6 +309,10 @@ include 'includes/header.php';
                 </ol>
             
             <br>
+        
+    </div>
+    
+    <div class="content two">
             
              <h2>Green Belt (6TH Gup) testing for Purple Belt (5TH Gup)</h2>
             
@@ -358,7 +366,9 @@ include 'includes/header.php';
             
             <p><strong>Competing in two tournaments a year is a requirement for progressing to high belt</strong></p>
             
-            <br>
+    </div>
+    
+    <div class="secondary-inner-content">
             
             <h2>Purple Belt (5TH Gup) testing for Blue Belt (4TH Gup)</h2>
             
@@ -410,8 +420,10 @@ include 'includes/header.php';
             
             <p><strong>Competing in two tournaments a year is a requirement for progressing to high belt</strong></p>
             
-            <br>
-            
+    </div>
+    
+    <div class="content two">
+          
              <h2>Blue Belt (4TH Gup) testing for Brown Belt (3rd Gup)</h2>
             
             <p>Required form: Taegeuk Yuk Jang (6th form)</p>
@@ -461,7 +473,9 @@ include 'includes/header.php';
             
             <p><strong>Competing in two tournaments a year is a requirement for progressing to high belt</strong></p>
             
-            <br>
+    </div>
+    
+    <div class="secondary-inner-content">
             
              <h2>Brown Belt (3rd Gup) testing for Red Belt (2nd Gup)</h2>
             
@@ -508,7 +522,9 @@ include 'includes/header.php';
                     <li>Stationary jumping spin kick</li>
                 </ol>
        
-            <br>
+    </div>
+    
+    <div class="content two">
             
              <h2>Red Belt (2nd Gup) testing for High Red (1st Gup)</h2>
             
@@ -539,7 +555,9 @@ include 'includes/header.php';
                     <li>Spinning hook kick</li>
             </ol>
         
-            <br>
+    </div>
+    
+    <div class="secondary-inner-content">
             
             <h2>Deputy Black Belt Requirements</h2>
             
@@ -569,7 +587,9 @@ include 'includes/header.php';
                     <li>Step in spinning back kick</li>
                 </ol>
             
-            <br>
+    </div>
+    
+    <div class="content two">
             
             <h2>1st Black Belt Requirements</h2>
             
@@ -591,12 +611,14 @@ include 'includes/header.php';
                 <li>Recite a 1-2 page essay on the subject of what Taekwondo has done for you and what your short and long term goals are going forward.</li>
             </ol>
             
-            <br>
+    </div>
+    
+    <div class="secondary-inner-content">
             
             <h2>2nd Black Belt Requirements</h2>
             
             <ol>
-                <li>Perform Koryo, Geumgang, and all 8 colored forms correctly</li>
+                <li>Perform Koryo, Keumgang, and all 8 colored forms correctly</li>
                 <li>Perform a creative breaking with four stations</li>
                     <ul>
                         <li>2 spinning</li>
@@ -622,8 +644,7 @@ include 'includes/header.php';
                         <li>1 minute with two Black Belts</li>
                     </ul>
             </ol>
-            
-        </div>
+        
 
     </div>
 

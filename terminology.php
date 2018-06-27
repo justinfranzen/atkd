@@ -4,11 +4,11 @@ include 'includes/header.php';
 
 <body>
     
-    <div id="bg-section">
-        
-        <div class="content2">
-            
-            <h1>TERMINOLOGY &amp; NUMBERS</h1>
+<h1 class="main-h1">TERMINOLOGY &amp; NUMBERS</h1>
+    
+<div id="terminology-title-img"></div>    
+    
+    <div class="secondary-content">
     
             <div class="row">
                 
@@ -55,7 +55,7 @@ include 'includes/header.php';
             
         </div>
         
-        <div class="content two">
+        <div class="secondary-content">
             
             <h1>NATIONAL FLAGS</h1>
             
@@ -81,8 +81,6 @@ include 'includes/header.php';
             <p>The Olympic motto is the hendiatris Citius, Altius, Fortius, which is Latin for "Faster, Higher, Stronger". It was proposed by Pierre de Coubertin upon the creation of the International Olympic Committee in 1894. Coubertin borrowed it from his friend Henri Didon, a Dominican priest who was an athletics enthusiast. Coubertin said "These three words represent a programme of moral beauty. The aesthetics of sport are intangible." The motto was introduced in 1924 at the Olympic Games in Paris. A more informal but well-known motto, also introduced by Coubertin, is "The most important thing is not to win but to take part!" Coubertin got this motto from a sermon by the Bishop of Pennsylvania during the 1908 London Games.</p>
             
             <p>The rings are five interlocking rings, colored blue, yellow, black, green and red on a white field, known as the "Olympic rings". The rings represent five world continents, Africa, Asia, America, Europe and Australia. The symbol was originally designed in 1912 by Baron Pierre de Coubertin, co-founder of the modern Olympic Games. According to Coubertin, the colors of the rings together with the white of the background included the colors composing every competing nation's flag at the time.</p>
-            
-        </div>
 
     </div>
 

@@ -4,39 +4,35 @@ include 'includes/header.php';
 
 <body>
     
-    <div id="bg-section">
-        
-        <div class="content2">
+<h1 class="main-h1">INSTRUCTORS &AMP; STAFF</h1>
     
-            <h1>INSTRUCTORS &AMP; STAFF</h1>
+<div id="instructors-staff-title-img"></div>
+        
+    <div class="secondary-content">
 
                 <div class="row instructor-bio">
                     
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         
-                        <img src="images/master-v.jpg" alt="Master Ron Vorpahl" class="instructor" />
+                        <div class="instructor-bio-bg">
                         
-                    </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Master Ron Vorpahl (Master V) - 6th Degree Black Belt <br> Owner &amp; Master Instructor Hartford, WI</h2>
-                        
-                    </div>
-            
-                </div>
-            
-            <div class="row instructor-bio">
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        
-                        <img src="images/master-av.jpg" alt="Master Aaron Vorpahl" class="instructor" />
+                            <img src="images/master-v.jpg" alt="Master Ron Vorpahl" class="instructor" />
+
+                            <figcaption>Master Ron Vorpahl (Master V) - 6th Degree Black Belt <br> Owner &amp; Master Instructor Hartford, WI</figcaption>
+                            
+                        </div>
                         
                     </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Master Aaron Vorpahl - 5th Degree Black Belt <br> Owner &amp; Master Instructor Fredonia, WI and Brookfield, WI</h2>
+        
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        
+                         <div class="instructor-bio-bg">
+                        
+                            <img src="images/master-av.jpg" alt="Master Aaron Vorpahl" class="instructor" />
+
+                            <figcaption>Master Aaron Vorpahl - 5th Degree Black Belt <br> Owner &amp; Master Instructor Fredonia, WI and Brookfield, WI</figcaption>
+                             
+                        </div>
                         
                     </div>
             
@@ -44,102 +40,88 @@ include 'includes/header.php';
             
             <div class="row instructor-bio">
                     
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         
-                        <img src="images/master-by.jpg" alt="Master Brian Young" class="instructor" />
+                        <div class="instructor-bio-bg">
                         
-                    </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Master Brian Young - 4th Degree Black Belt <br> Assistant Instructor Hartford, WI</h2>
-                        
-                    </div>
-            
-                </div>
-            
-            <div class="row instructor-bio">
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        
-                        <img src="images/master-sc.jpg" alt="Master Ron Vorpahl" class="instructor" />
+                            <img src="images/master-by.jpg" alt="Master Brian Young" class="instructor" />
+
+                            <figcaption>Master Brian Young - 4th Degree Black Belt <br> Assistant Instructor Hartford, WI</figcaption>
+                            
+                        </div>
                         
                     </div>
                     
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Master Steve Cruft - 4th Degree Black Belt <br> Instructor  West Bend, WI</h2>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        
+                        <div class="instructor-bio-bg">
+                        
+                            <img src="images/master-sc.jpg" alt="Master Ron Vorpahl" class="instructor" />
+
+                            <figcaption>Master Steve Cruft - 4th Degree Black Belt <br> Instructor  West Bend, WI</figcaption>
+                            
+                        </div>
                         
                     </div>
             
-                </div>
+            </div>
             
             <div class="row instructor-bio">
                     
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         
-                        <img src="images/bc.jpg" alt="Bill Schuster" class="instructor" />
+                        <div class="instructor-bio-bg">
                         
-                    </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Mr. Bill Schuster- 3rd Degree Black Belt <br> Assistant Instructor Hartford, WI</h2>
-                        
-                    </div>
-            
-                </div>
-            
-            <div class="row instructor-bio">
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        
-                        <img src="images/ep.jpg" alt="Erich Podbielski" class="instructor" />
+                            <img src="images/bc.jpg" alt="Bill Schuster" class="instructor" />
+
+                            <figcaption>Mr. Bill Schuster- 3rd Degree Black Belt <br> Assistant Instructor Hartford, WI </figcaption>
+                            
+                        </div>
                         
                     </div>
                     
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Mr. Erich Podbielski - 3rd Degree Black Belt <br> Assistant Instructor West Bend, WI</h2>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         
+                        <div class="instructor-bio-bg">
+                        
+                            <img src="images/ep.jpg" alt="Erich Podbielski" class="instructor" />
+
+                            <figcaption>Mr. Erich Podbielski - 3rd Degree Black Belt <br> Assistant Instructor West Bend, WI</figcaption>
+                            
+                        </div>
+
                     </div>
             
-                </div>
-            
-            <div class="row instructor-bio">
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                        
-                        <img src="images/hp.jpg" alt="Hannah Podbielski" class="instructor" />
-                        
-                    </div>
-                    
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Ms. Hannah Podbielski - 3rd Degree Black Belt <br> Assistant Instructor  West Bend, WI</h2>
-                        
-                    </div>
-            
-                </div>
+            </div>
             
             <div class="row">
                     
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                         
-                        <img src="images/wm.jpg" alt="William McLarty" class="instructor" />
+                        <div class="instructor-bio-bg">
+                        
+                            <img src="images/hp.jpg" alt="Hannah Podbielski" class="instructor" />
+
+                            <figcaption>Ms. Hannah Podbielski - 3rd Degree Black Belt <br> Assistant Instructor  West Bend, WI</figcaption>
+                        
+                        </div>
                         
                     </div>
                     
-                    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                
-                        <h2 class="bio">Mr. William McLarty - 1st Degree Black Belt <br> Assistant Instructor Fredonia, WI</h2>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        
+                        <div class="instructor-bio-bg">
+                        
+                            <img src="images/wm.jpg" alt="William McLarty" class="instructor" />
+
+                            <figcaption>Mr. William McLarty - 1st Degree Black Belt <br> Assistant Instructor Fredonia, WI</figcaption>
+                            
+                        </div>
                         
                     </div>
             
                 </div>
 
-            
-        </div>
 
     </div>
 
