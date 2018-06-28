@@ -21,11 +21,6 @@ body {
     z-index: 999;
 }
 
-#footer {
-    height: 150px;
-    background: rgba(4, 104, 147, 1);
-}
-
 #logo {
     width: 100px;
     max-width: 100%;
@@ -50,7 +45,7 @@ body {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 8px 15px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
 }
@@ -203,6 +198,13 @@ p {
     width: 100%;
 }
 
+.content.two.bg{
+    margin: 0 auto;
+    background: rgba(4, 104, 147, .3);
+    padding: 170px 6% 70px;
+    width: 100%;
+}
+
 .secondary-content {
     margin: 70px 6% 80px 6%;
 }
@@ -244,6 +246,7 @@ p {
 h1 {
     color: black;
     text-align: center;
+    font-size: 46px !important;
 }
 
 .index-secondary-title {
@@ -257,6 +260,7 @@ h2 {
     font-family: 'Oswald', sans-serif !important;
     letter-spacing: 1px;
     margin-bottom: 20px !important;
+    font-size: 36px !important;
 }
 
 h3 {
@@ -440,7 +444,7 @@ ul, ol {
 }
 
 .space {
-    margin-top: 120px;
+    margin-top: 80px;
 }
 
 .space2 {
@@ -504,8 +508,38 @@ ul, ol {
 
 iframe {
     display: block;
-    margin: 0 auto 50px auto;
-    padding-top: 50px;
+    margin: 40px auto 20px auto;
+}
+
+.location-info {
+    margin: 0 auto;
+    width: 210px;
+    text-align: center;
+}
+
+.fab.fa-facebook {
+    font-size: 40px;
+    margin-top: 15px;
+    color: rgb(233,41,41);
+}
+
+.fab.fa-facebook:hover {
+    color: #3b5998;
+    transition-duration: .3s;
+}
+
+.fab.fa-facebook:not(:hover) {
+    transition-duration: .3s;
+}
+
+.fas.fa-phone {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.glyphicon {
+    font-size: 16px;
+    margin-right: 5px;
 }
 
 .img {
@@ -565,6 +599,58 @@ iframe {
     max-width: 100%;
     margin: 50px auto 0;
     display: block;
+}
+
+#footer {
+    height: 500px;
+    background: rgba(4, 104, 147, 1);
+    color: white;
+}
+
+#footer-location-info {
+    margin-left: 10%;
+    padding-top: 40px;
+    float: left;
+}
+
+.footer-link {
+    color: white;
+}
+
+.footer-link:hover {
+    color: lightblue;
+    text-decoration: none;
+    transition-duration: .3s;
+}
+
+.footer-link:not(:hover) {
+    transition-duration: .3s;
+}
+
+#programs {
+    float: right;
+    text-align: left;
+    margin-right: 10%;
+    padding-top: 70px;
+    list-style-type: none;
+}
+
+#programs li {
+    padding: 5px 0;
+}
+
+#programs li a {
+    color: white;
+}
+
+#programs li a:hover {
+    text-decoration: none;
+    color: lightblue;
+    transition-duration: .3s;
+}
+
+#programs li a:not(:hover) {
+    transition-duration: .3s;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1075px) {
@@ -735,6 +821,22 @@ iframe {
         margin: 0px;
         padding: 10px 0 !important;
     }
+    
+    #footer-location-info {
+    margin-left: 10%;
+    padding-top: 40px;
+    float: left;
+     transition-duration: .3s;
+}
+    
+#programs {
+    float: right;
+    text-align: left;
+    margin-right: 10%;
+    padding-top: 70px;
+    list-style-type: none;
+    transition-duration: .3s;
+}
     
 }
 
@@ -908,9 +1010,50 @@ iframe {
         padding: 10px 0 !important;
     }
     
+    #bg-img {
+        background-image: url('../images/homepage-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+    }
+    
+    #footer {
+        height: 750px;
+    }
+    
+ #footer-location-info {
+    margin-left: 5%;
+    padding-top: 40px;
+    float: left;
+     transition-duration: .3s;
+}
+    
+#programs {
+    clear: left;
+    float: left;
+    margin-left: 0;
+    padding-top: 20px;
+}
+    
 }
 
 @media only screen and (min-width: 375px) and (max-width: 667px) {
+    
+    #bg-img {
+        background-image: url('../images/homepage-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        transition-duration: .3s;
+    }
+    
+    #logo {
+        width: 100px;
+        max-width: 100px;
+        transition-duration: .3s;
+    }
     
     #nav {
         display: none;
@@ -923,6 +1066,7 @@ iframe {
         float: right;
         margin-right: 3%;
         margin-top: 30px;
+        transition-duration: .3s;
     }
     
     #myNav {
@@ -1079,10 +1223,61 @@ iframe {
         padding: 10px 0 !important;
     }
     
+    .main-h1 {
+        font-size: 60px;
+        transition-duration: .3s;
+    }
+    
+    #school-name {
+        font-size: 75px;
+        transition-duration: .3s;
+    }
+    
+    
+    #slogan {
+        font-size: 45px !important;
+        transition-duration: .3s;
+    }
+    
+    #footer {
+        height: 750px
+    }
+    
+#footer-location-info {
+    margin-left: 5%;
+    padding: 40px 5px 0;;
+}
+    
+#programs {
+    clear: left;
+    float: left;
+    margin-left: -2%;
+    padding-top: 20px;
+}
+    
     
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    #bg-img {
+        background-image: url('../images/homepage-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        background-position: center;
+    }
+    
+    #school-name {
+        margin-top: 220px;
+        transition-duration: .3s;
+    }
+    
+    #logo {
+        width: 70px;
+        max-width: 100%;
+        transition-duration: .3s;
+    }
     
     #nav {
         display: none;
@@ -1094,7 +1289,8 @@ iframe {
         font-size: 40px !important;
         float: right;
         margin-right: 3%;
-        margin-top: 30px;
+        margin-top: 15px;
+        transition-duration: .3s;
     }
     
     #myNav {
@@ -1252,11 +1448,57 @@ iframe {
         transition: ease-out .2s;
     }
     
+    .main-h1 {
+        font-size: 46px !important;
+        transition-duration: .3s;
+    }
+    
+     #school-name {
+        font-size: 55px !important;
+        transition-duration: .3s;
+    }
+    
+    #slogan {
+        font-size: 30px !important;
+        transition-duration: .3s;
+    }
+    
+    #footer {
+        height: 820px;
+    }
+    
+#footer-location-info {
+    margin-left: 5%;
+    padding: 40px 5px 0;;
+}
+    
+#programs {
+    float: left;
+    margin-left: -3%;
+    padding-top: 20px;
+}
     
     
 }
 
 @media only screen and (min-width: 100px) and (max-width: 375px) {
+    
+    #bg-img {
+        background-image: url('../images/homepage-img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500x;
+        background-position: center;
+    }
+    
+     #school-name {
+        margin-top: 220px;
+    }
+    
+    #logo {
+        width: 70px;
+        max-width: 100%;
+    }
     
     #nav {
         display: none;
@@ -1268,7 +1510,7 @@ iframe {
         font-size: 40px !important;
         float: right;
         margin-right: 3%;
-        margin-top: 30px;
+        margin-top: 15px;
     }
     
     #myNav {
@@ -1424,6 +1666,34 @@ iframe {
         color: white;
         transition: ease-out .2s;
     }
+    
+    #school-name {
+        font-size: 55px !important;
+    }
+    
+    #slogan {
+        font-size: 30px !important;
+    }
+    
+    .main-h1 {
+        font-size: 46px !important;
+    }
+    
+    #footer {
+        height: 820px;
+    }
+    
+#footer-location-info {
+    margin-left: 5%;
+    padding: 40px 5px 0;
+}
+    
+#programs {
+    float: left;
+    margin-left: -5%;
+    padding-top: 20px;
+}
+    
     
     
 }
