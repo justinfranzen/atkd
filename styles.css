@@ -11,7 +11,7 @@ body {
 }
 
 #header {
-    background: rgba(4, 104, 147, 1);
+    background: rgba(4, 104, 147, .5);
     width: 100%;
     display: block;
     position: fixed;
@@ -21,12 +21,17 @@ body {
     z-index: 999;
 }
 
+.header-bg {
+    transition-duration: .5s;
+}
+
 #logo {
     width: 100px;
     max-width: 100%;
     margin-left: 3%;
     padding: 10px 0 5px 0;
     margin-bottom: 5px;
+    border-radius: 50%;
 }
 
 #nav {
@@ -38,34 +43,34 @@ body {
 }
 
 #nav li {
-    padding: 0 5px;
+    padding: 0 5px 15px 5px;
 }
 
 #nav li a {
     font-size: 18px;
     color: white;
     text-decoration: none;
-    padding: 8px 15px;
+    padding: 10px 15px;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 2px;
 }
 
 #nav li a:hover {
     color: rgb(233,41,41);
-    transition-duration: .3s;
+    transition-duration: 0s;
 }
 
 #nav li a:not(:hover) {
-    transition-duration: .3s;
+    transition-duration: 0s;
 }
 
 .submenu-content, .submenu-content2, .submenu-content3, .submenu-content4 {
     display: none;
     position: absolute;
     width: auto;
-    margin-left: 5px;
+    margin-left: 10px;
     background: rgb(136, 175, 191);
-    margin-top: 8px;
+    margin-top: 0;
     height: auto; 
     text-align: left;
     z-index: 1;
@@ -77,16 +82,18 @@ body {
 
 .submenu-content li a, .submenu-content2 li a, .submenu-content3 li a, .submenu-content4 li a {
     display: inherit;
-    padding: 0;
+    padding: 8px 10px !important;
 }
 
 .submenu-content li a:hover, .submenu-content2 li a:hover, .submenu-content3 li a:hover, .submenu-content4 li a:hover{
     background: rgb(233,41,41);
     color: white !important;
+    transition-duration: 0s !important;
 }
 
 #about-dropdown:hover .submenu-content, #programs-dropdown:hover .submenu-content2, #schedule-dropdown:hover .submenu-content3, #knowledge-dropdown:hover .submenu-content4 {
     display: block;
+    cursor: pointer;
 }
 
 #bg-img {
@@ -94,6 +101,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 #school-name {
@@ -107,18 +115,33 @@ body {
     font-family: 'Oswald', sans-serif;
     line-height: 1;
     font-style: italic;
+    /*display: none !important;*/
 }
+
+/*#school-name-parallax {
+    margin-top: 300px;
+    position: fixed;
+    color: white;
+    text-align: center;
+    left: 0;
+    right: 0;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1;
+    font-style: italic;
+}*/
 
 #slogan {
     font-size: 45px;
 }
 
 #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
-    margin-top: 120px;
+    height: 500px;
+    margin-top: 0;
 }
 
 #instructors-staff-title-img {
@@ -173,6 +196,10 @@ body {
     background-image: url("../images/contact.jpg");
 }
 
+#water-bg {
+    display: none;
+}
+
 p {
     font-size: 16px;
     font-family: 'Libre Franklin', sans-serif;
@@ -185,28 +212,26 @@ p {
 }
 
 .content {
-    width: 95%;
-    margin: 180px auto 80px auto;
+    width: 1024px;
+    margin: 80px auto 80px auto;
     /*background: rgba(233,41,41, .5);*/
-    padding: 0 4%;
+}
+
+.bg{
+    background: rgba(4, 104, 147, .3);
+    padding: 65px 0;
+    width: 100%;
 }
 
 .content.two {
     margin: 0 auto;
-    background: rgba(4, 104, 147, .3);
-    padding: 50px 6% 50px;
-    width: 100%;
-}
-
-.content.two.bg{
-    margin: 0 auto;
-    background: rgba(4, 104, 147, .3);
-    padding: 170px 6% 70px;
-    width: 100%;
+    width: 1024px;
+    padding: 0 20px;
 }
 
 .secondary-content {
-    margin: 70px 6% 80px 6%;
+    margin: 70px auto;
+    width: 1024px;
 }
 
 .secondary-bg-section {
@@ -215,15 +240,20 @@ p {
 }
 
 .secondary-inner-content {
-    width: 90%;
+    width: 1024px;
     margin: 60px auto;
+    padding: 0 20px;
 }
+
+ #blurb-section {
+        margin-top: -25px;
+    }
 
 .blurb {
     background: rgba(4, 104, 147, 1);
     color: white;
     padding: 10px 20px;
-    height: 500px;
+    min-height: 550px;
     text-align: center;
     width: 350px;
     max-width: 100%;
@@ -235,7 +265,7 @@ p {
     text-align: center;
     font-family: 'Oswald', sans-serif !important;
     letter-spacing: 2px;
-    margin-top: 100px !important;
+    margin-top: 80px !important;
     color: white !important;
     left: 0;
     right: 0;
@@ -253,7 +283,6 @@ h1 {
     margin-bottom: 50px;
     color: black !important;
     padding-bottom: 0;
-    margin-top: -100px !important;
 }
 
 h2 {
@@ -291,11 +320,12 @@ blockquote {
 
 #contact-form {
     max-width: 800px;
-    margin: 40px auto 15px;
-    padding: 3%;
+    margin: 40px auto;
+    padding: 3% 3% 2% 3%;;
     border: 1px solid lightslategray;
     background: rgba(4, 104, 147, .3);
     border-radius: 5px;
+    transition-duration: .3s;
 }
 
 label {
@@ -310,6 +340,11 @@ input {
     margin-bottom: 20px !important;
     border: 1.5px solid rgb(4, 104, 147);
     border-radius: 3px;
+    margin-bottom: 0 !important;
+}
+
+.row.input {
+    margin-bottom: 10px;
 }
 
 ::placeholder {
@@ -333,7 +368,7 @@ textarea {
     color: black;
     font-size: 16px;
     border-radius: 3px;
-    margin: 50px auto 10px;
+    margin: 30px auto 10px;
     display: block;
     cursor: pointer;
     font-weight: normal;
@@ -347,6 +382,35 @@ textarea {
 
 #submit:not(:hover) {
     transition-duration: .3s;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 0px !important;
+    margin-bottom: 10px;
+}
+
+.error2 {
+    color: red;
+    font-size: 16px;
+    margin-top: 0 !important;
+    margin-bottom: 0;
+}
+
+#thank-you {
+    margin-top: 300px;
+    margin-bottom: 200px;
+    padding: 0 3%;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.index-instructor {
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin: 15px auto;
 }
 
 .instructor {
@@ -368,7 +432,7 @@ figcaption {
 }
 
 .instructor-bio-bg {
-    background: rgb(136, 175, 191);
+    background: rgba(136, 175, 191, .5);
     width: 500px;
     max-width: 100%;
     padding: 30px;
@@ -426,6 +490,10 @@ ul, ol {
     max-width: 100%;
     display: block;
     margin: 20px auto;
+}
+
+.hapkido-list {
+    margin-top: 20px;
 }
 
 #forms {
@@ -549,6 +617,18 @@ iframe {
     display: block;
 }
 
+#solemnity {
+    width: 350px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.parallax p {
+    width: 1024px;
+    margin: 0 auto;
+}
+
 .auto {
     margin: 0 auto;
     transition-duration: 1s;
@@ -558,6 +638,10 @@ iframe {
     margin: 0;
     padding-top: 50px;
 }
+
+ #student-creed {
+    padding: 0 5%;
+ }
 
 .forms {
     background: rgb(136, 175, 191);
@@ -601,8 +685,8 @@ iframe {
     display: block;
 }
 
-#footer {
-    height: 500px;
+footer {
+    height: 550px;
     background: rgba(4, 104, 147, 1);
     color: white;
 }
@@ -651,6 +735,175 @@ iframe {
 
 #programs li a:not(:hover) {
     transition-duration: .3s;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row.gallery {
+    margin-top: 50px;
+}
+
+.photo {
+    height: 600px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white !important;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px !important;
+  font-weight: bold;
+    opacity: 1 !important;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the slides by default */
+.hartfordSlides, .fredoniaSlides, .westBendSlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Caption text */
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+img.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+vertical-align: middle;
+width: 280px;
+margin-bottom: 50px;
+max-width: 100%;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media only screen and (max-width: 1024px) {
+
+.content {
+    width: 100%;
+    padding: 0 20px;
+}
+    
+.content.two {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+    
+.secondary-content {
+    width: 100%;
+    padding: 0 20px;
+}
+    
+.secondary-inner-content {
+    width: 100%;
+    padding: 0 20px;
+}
+    
+.parallax p {
+    width: 100%;
+    padding: 0 20px;
+}
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1075px) {
@@ -713,195 +966,7 @@ iframe {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 10px;
-    margin-top: 25px;
-    text-decoration: none;
-    font-size: 22px !important;
-    color: white;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: lightskyblue;
-    text-decoration: none;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-    position: absolute;
-    top: -20px !important;
-    right: 45px;
-    font-size: 60px;
-}
-
-.overlay .closebtn:hover {
-        text-decoration: none;
-    }
-    
-    .dropbtn {
-            background: transparent;
-            padding: 0px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 50px;
-            color: black;
-        }
-
-    /* Dropdown button on hover & focus */
-    .dropbtn:hover, .dropbtn:focus {
-
-    }
-
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        display: block;
-        float: right;
-        margin-right: 5%;
-        cursor: pointer;
-        margin-top: 15px;
-        color: rgba(162, 192, 217, 1);
-    }
-
-    /* Dropdown Content (Hidden by Default) */
-     .dropdown-content {
-        display: none;
-        list-style-type: none;
-        position: fixed;
-        background-color: maroon;
-        font-family: 'Lato', sans-serif;
-        text-decoration: none;
-        margin-left: auto;
-        top: 107px;
-        height: auto;
-        left: 0;
-        right: 0;
-         padding-bottom: 5px;
-    }
-
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        color: white;
-        padding: 13px;
-        text-decoration: none;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 2px;
-    }
-
-        .icon {
-            height:30px;
-            width: 30px;
-        }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover, .dropdown-content li a:focus {
-        color: rgba(162, 192, 217, 1);
-        transition: ease-in .2s;
-        text-decoration: none;
-    }
-    
-    .dropdown-content a:not(:hover) {
-        color: white;
-        transition: ease-out .2s;
-    }
-    
-    #about-overlay-dropdown-submenu, #programs-overlay-dropdown-submenu, #schedule-overlay-dropdown-submenu, #knowledge-overlay-dropdown-submenu {
-        display: none;
-    }
-    
-    #about-overlay-dropdown-submenu li, #programs-overlay-dropdown-submenu li, #schedule-overlay-dropdown-submenu li, #knowledge-overlay-dropdown-submenu li {
-        list-style-type: none;
-    }
-    
-     #about-overlay-dropdown-submenu li a, #programs-overlay-dropdown-submenu li a, #schedule-overlay-dropdown-submenu li a, #knowledge-overlay-dropdown-submenu li a {
-        margin: 0px;
-        padding: 10px 0 !important;
-    }
-    
-    #footer-location-info {
-    margin-left: 10%;
-    padding-top: 40px;
-    float: left;
-     transition-duration: .3s;
-}
-    
-#programs {
-    float: right;
-    text-align: left;
-    margin-right: 10%;
-    padding-top: 70px;
-    list-style-type: none;
-    transition-duration: .3s;
-}
-    
-}
-
-
-@media only screen and (min-width: 668px) and (max-width: 767px) {
-    
-    #nav {
-        display: none;
-    }
-    
-    #mobile-nav {
-        display: block;
-        color: white;
-        font-size: 40px !important;
-        float: right;
-        margin-right: 3%;
-        margin-top: 30px;
-    }
-    
-    #myNav {
-        display: block !important;
-    }
-    
-    #arrow {
-        float: right;
-        margin-right: 55%;
-        margin-top: 10px;
-    }
-    
-    .overlay a {font-size: 24px !important; padding: 5px !important;}
-    .overlay .closebtn {
-        font-size: 60px !important;
-        top: 0px !important;
-        right: 20px !important;
-    }
-    
- /* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 100%;
-    width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(4, 104, 147, .97); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    width: 100%; /* 100% width */
-    text-align: left; /* Centered text/links */
-    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
-    font-family: 'Lato', sans-serif;
-    list-style-type: none;
-    margin-left: 25%;
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 10px;
+    padding: 0 !important;
     margin-top: 25px;
     text-decoration: none;
     font-size: 22px !important;
@@ -1011,15 +1076,259 @@ iframe {
     }
     
     #bg-img {
-        background-image: url('../images/homepage-img.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
-        background-position: center;
+        background-attachment: inherit;
     }
     
-    #footer {
-        height: 750px;
+    .parallax {
+        display: none;
+    }
+    
+     .parallax2 {
+        background-attachment: inherit !important;
+         height: 650px !important;
+    }
+    
+    #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        background-attachment: inherit;
+    }
+    
+#water-bg {
+    display: block;
+    background-image: url("../images/fluidity.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    padding: 60px 6%;
+}
+    
+    #footer-location-info {
+    margin-left: 10%;
+    padding-top: 40px;
+    float: left;
+     transition-duration: .3s;
+}
+    
+#programs {
+    float: right;
+    text-align: left;
+    margin-right: 10%;
+    padding-top: 70px;
+    list-style-type: none;
+    transition-duration: .3s;
+}
+    
+}
+
+
+@media only screen and (min-width: 668px) and (max-width: 767px) {
+    
+    #nav {
+        display: none;
+    }
+    
+    #mobile-nav {
+        display: block;
+        color: white;
+        font-size: 40px !important;
+        float: right;
+        margin-right: 3%;
+        margin-top: 30px;
+    }
+    
+    #myNav {
+        display: block !important;
+    }
+    
+    #arrow {
+        float: right;
+        margin-right: 55%;
+        margin-top: 10px;
+    }
+    
+    .overlay a {font-size: 24px !important; padding: 5px !important;}
+    .overlay .closebtn {
+        font-size: 60px !important;
+        top: 0px !important;
+        right: 20px !important;
+    }
+    
+ /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(4, 104, 147, .97); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%; /* 100% width */
+    text-align: left; /* Centered text/links */
+    top: 25% !important; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    font-family: 'Lato', sans-serif;
+    list-style-type: none;
+    margin-left: 25%;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 0 !important;
+    margin-top: 25px;
+    text-decoration: none;
+    font-size: 22px !important;
+    color: white;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: lightskyblue;
+    text-decoration: none;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -20px !important;
+    right: 45px;
+    font-size: 60px;
+}
+
+.overlay .closebtn:hover {
+        text-decoration: none;
+    }
+    
+    .dropbtn {
+            background: transparent;
+            padding: 0px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 50px;
+            color: black;
+        }
+
+    /* Dropdown button on hover & focus */
+    .dropbtn:hover, .dropbtn:focus {
+
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        display: block;
+        float: right;
+        margin-right: 5%;
+        cursor: pointer;
+        margin-top: 15px;
+        color: rgba(162, 192, 217, 1);
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+     .dropdown-content {
+        display: none;
+        list-style-type: none;
+        position: fixed;
+        background-color: maroon;
+        font-family: 'Lato', sans-serif;
+        text-decoration: none;
+        margin-left: auto;
+        top: 107px;
+        height: auto;
+        left: 0;
+        right: 0;
+         padding-bottom: 5px;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: white;
+        padding: 13px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+        .icon {
+            height:30px;
+            width: 30px;
+        }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover, .dropdown-content li a:focus {
+        color: rgba(162, 192, 217, 1);
+        transition: ease-in .2s;
+        text-decoration: none;
+    }
+    
+    .dropdown-content a:not(:hover) {
+        color: white;
+        transition: ease-out .2s;
+    }
+    
+    #about-overlay-dropdown-submenu, #programs-overlay-dropdown-submenu, #schedule-overlay-dropdown-submenu, #knowledge-overlay-dropdown-submenu {
+        display: none;
+    }
+    
+    #about-overlay-dropdown-submenu li, #programs-overlay-dropdown-submenu li, #schedule-overlay-dropdown-submenu li, #knowledge-overlay-dropdown-submenu li {
+        list-style-type: none;
+    }
+    
+     #about-overlay-dropdown-submenu li a, #programs-overlay-dropdown-submenu li a, #schedule-overlay-dropdown-submenu li a, #knowledge-overlay-dropdown-submenu li a {
+        margin: 0px;
+        padding: 10px 0 !important;
+    }
+    
+    #bg-img {
+        background-attachment: inherit;
+    }
+    
+    #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        background-attachment: inherit;
+    }
+    
+    .parallax {
+        display: none;
+    }
+    
+    .parallax2 {
+        background-attachment: inherit !important;
+        height: 650px !important;
+    }
+    
+#water-bg {
+    display: block;
+    background-image: url("../images/fluidity.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    color: white;
+    padding: 60px 6%;
+}
+    
+    .bio {
+        margin-top: 40px;
+    }
+    
+    .instructors {
+        margin-top: -50px;
+    }
+    
+    footer {
+        height: 800px;
     }
     
  #footer-location-info {
@@ -1114,7 +1423,7 @@ iframe {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 10px;
+    padding: 0 !important;
     margin-top: 25px;
     text-decoration: none;
     font-size: 22px !important;
@@ -1224,8 +1533,14 @@ iframe {
     }
     
     .main-h1 {
-        font-size: 60px;
+        font-size: 60px !important;
+        width: 400px;
+        margin: auto;
         transition-duration: .3s;
+    }
+    
+    #bg-img {
+        background-attachment: inherit;
     }
     
     #school-name {
@@ -1233,14 +1548,60 @@ iframe {
         transition-duration: .3s;
     }
     
-    
     #slogan {
         font-size: 45px !important;
         transition-duration: .3s;
     }
     
-    #footer {
-        height: 750px
+     #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        margin-top: 0;
+        transition-duration: .3s;
+        background-attachment: inherit;
+    }
+    
+    .parallax {
+        display: none;
+    }
+    
+    .parallax2 {
+        background-attachment: inherit !important;
+        height: 700px !important;
+    }
+    
+ #water-bg {
+    display: block;
+    background-image: url("../images/fluidity.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    color: white;
+    padding: 60px 6%;
+}
+    
+    .secondary-content {
+        margin: 40px auto 50px auto;
+    }
+    
+    #contact-form {
+        padding: 5%;
+        transition-duration: .3s;
+    }
+    
+    #solemnity {
+        display: none;
+    }
+    
+    .bio {
+        margin-top: 40px;
+    }
+    
+    .instructors {
+        margin-top: -50px;
+    }
+    
+    footer {
+        height: 800px
     }
     
 #footer-location-info {
@@ -1258,18 +1619,54 @@ iframe {
     
 }
 
+@media only screen and (min-width: 375px) and (max-width: 667px) and (orientation: landscape) {
+    
+    #logo {
+        width: 70px;
+        max-width: 100px;
+        transition-duration: .3s;
+    }
+    
+    #mobile-nav {
+        margin-top: 15px;
+    }
+    
+    .overlay-content {
+        padding-bottom: 100px;
+    }
+    
+    #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        height: 100vh;
+    }
+    
+    .main-h1 {
+        margin-top: -20px !important;
+    }
+    
+    #school-name {
+        margin-top: 150px;
+        font-size: 50px !important;
+    }
+    
+    #slogan {
+        font-size: 30px !important;
+    }
+    
+}
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
     
     #bg-img {
         background-image: url('../images/homepage-img.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500px;
+        height: 100vh;
         background-position: center;
+        margin-bottom: 0;
     }
     
     #school-name {
-        margin-top: 220px;
+        margin-top: 260px;
         transition-duration: .3s;
     }
     
@@ -1288,8 +1685,8 @@ iframe {
         color: white;
         font-size: 40px !important;
         float: right;
-        margin-right: 3%;
-        margin-top: 15px;
+        margin-right: 5%;
+        margin-top: 20px;
         transition-duration: .3s;
     }
     
@@ -1339,7 +1736,7 @@ iframe {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 10px;
+    padding: 0 !important;
     margin-top: 25px;
     text-decoration: none;
     font-size: 22px !important;
@@ -1448,9 +1845,25 @@ iframe {
         transition: ease-out .2s;
     }
     
+    #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        margin-top: 0;
+        background-attachment: inherit;
+    }
+    
     .main-h1 {
-        font-size: 46px !important;
+        font-size: 50px !important;
+        width: 330px;
+        margin-top: 80px !important;
+        margin: auto;
         transition-duration: .3s;
+    }
+    
+    h2 {
+        font-size: 32px !important;
+    }
+    
+    #bg-img {
+        background-attachment: inherit;
     }
     
      #school-name {
@@ -1463,8 +1876,57 @@ iframe {
         transition-duration: .3s;
     }
     
-    #footer {
-        height: 820px;
+    .parallax {
+        display: none;
+    }
+    
+    .parallax2 {
+        background-attachment: inherit !important;
+        height: 780px !important;
+    }
+    
+ #water-bg {
+    display: block;
+    background-image: url("../images/fluidity.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    padding: 50px 6%;
+}
+    
+    .secondary-content {
+        margin: 40px auto 50px auto;
+    }
+    
+    #contact-form {
+        padding: 5%;
+    }
+    
+    .index-secondary-title {
+        font-size: 40px !important;
+    }
+
+    
+    .blurb-title {
+        font-size: 30px !important;
+    }
+    
+    #solemnity {
+        display: none;
+    }
+    
+    .bio {
+        margin-top: 40px;
+    }
+    
+    .instructors {
+        margin-top: -50px;
+    }
+    
+    footer {
+        height: 800px;
     }
     
 #footer-location-info {
@@ -1481,18 +1943,54 @@ iframe {
     
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    
+    #logo {
+        width: 70px;
+        max-width: 100px;
+        transition-duration: .3s;
+    }
+    
+    #bg-img {
+        height: 100vh;
+    }
+    
+    #mobile-nav {
+        margin-top: 15px;
+    }
+    
+    .overlay-content {
+        padding-bottom: 100px;
+    }
+    
+    #school-name {
+        margin-top: 150px;
+        font-size: 50px !important;
+    }
+    
+    #slogan {
+        font-size: 30px !important;
+    }
+    
+     .main-h1 {
+        margin-top: -20px !important;
+    }
+    
+}
+
 @media only screen and (min-width: 100px) and (max-width: 375px) {
     
     #bg-img {
         background-image: url('../images/homepage-img.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        height: 500x;
+        height: 100vh;
         background-position: center;
+        margin-bottom: 0;
     }
     
      #school-name {
-        margin-top: 220px;
+        margin-top: 260px;
     }
     
     #logo {
@@ -1509,8 +2007,8 @@ iframe {
         color: white;
         font-size: 40px !important;
         float: right;
-        margin-right: 3%;
-        margin-top: 15px;
+        margin-right: 5%;
+        margin-top: 20px;
     }
     
     #myNav {
@@ -1558,7 +2056,7 @@ iframe {
 
 /* The navigation links inside the overlay */
 .overlay a {
-    padding: 10px;
+    padding: 0 !important;
     margin-top: 25px;
     text-decoration: none;
     font-size: 22px !important;
@@ -1675,12 +2173,73 @@ iframe {
         font-size: 30px !important;
     }
     
-    .main-h1 {
-        font-size: 46px !important;
+    #instructors-staff-title-img, #forms-sparring-title-img, #contact-title-img, #locations-title-img, #taekwondo-title-img, #hapkido-title-img, #testing-title-img, #birthday-title-img, #terminology-title-img, #tournaments-title-img, #schedule-title-img, #rules-title-img, #competition-title-img {
+        margin-top: 0;
+        background-attachment: inherit;
     }
     
-    #footer {
-        height: 820px;
+    .main-h1 {
+        font-size: 40px !important;
+        width: 270px;
+        margin-top: 80px !important;
+        margin: auto;
+        transition-duration: .3s;
+    }
+    
+    #bg-img {
+        background-attachment: inherit;
+    }
+    
+ .parallax {
+    display: none;
+}
+    
+    .parallax2 {
+        background-attachment: inherit !important;
+        height: 830px !important;
+    }
+    
+ #water-bg {
+    display: block;
+    background-image: url("../images/fluidity.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    color: white;
+    padding: 50px 6%;
+}
+    
+    .secondary-content {
+        margin: 40px auto 50px auto;
+    }
+    
+    .index-secondary-title {
+        font-size: 40px !important;
+    }
+    
+    h2 {
+        font-size: 32px !important;
+    }
+    
+    .blurb-title {
+        font-size: 30px !important;
+    }
+    
+    #solemnity {
+        display: none;
+    }
+    
+    .bio {
+        margin-top: 40px;
+    }
+    
+    .instructors {
+        margin-top: -50px;
+    }
+    
+    footer {
+        height: 830px;
     }
     
 #footer-location-info {
@@ -1693,7 +2252,33 @@ iframe {
     margin-left: -5%;
     padding-top: 20px;
 }
+     
+}
+
+/*@media only screen and (min-width: 100px) and (max-width: 375px) and (orientation: landscape) {
     
+    #logo {
+        width: 70px;
+        max-width: 100px;
+        transition-duration: .3s;
+    }
     
+    #mobile-nav {
+        margin-top: 15px;
+    }
+    
+    #school-name {
+        margin-top: 150px;
+        font-size: 50px !important;
+    }
+    
+    #slogan {
+        font-size: 30px !important;
+    }
+    
+     .main-h1 {
+        margin-top: -20px !important;
+    }
     
 }
+*/

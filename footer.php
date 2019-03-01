@@ -1,6 +1,8 @@
-<div id="footer">
+<footer>
 
     <div id="footer-location-info">
+        
+        <h3>Locations</h3>
     
         <p>Hartford<br>
         17 N Main St, Hartford, WI 53027<br>
@@ -30,4 +32,4 @@
         </ul>
 
 
-</div>
+</footer>
